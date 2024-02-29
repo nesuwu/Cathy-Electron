@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<head>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://catbox.moe;">
-</head>
 <html>
+  <head>
+    <!-- Meta tag for CSP. Uncomment if needed. -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://catbox.moe;"> -->
+    
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
   <body>
-    <input type="text" id="userhashInput" placeholder="Enter userhash (optional)">
-    <input type="file" id="fileInput">
-    <button id="uploadButton">Upload</button>
+    <!-- Wave and Logo -->
+    <div class="wave">
+    <div id="logo-container">
+      <img id="logo" src="../images/cathy_logo_nobg.svg" alt="Logo">
+    </div>
+    <!-- Userhash input field -->
+    <div class="userhash-section">
+      <input type="text" id="userhashInput" placeholder="Userhash" maxlength="25">
+    </div>
+
+    <!-- File selection input field -->
+    <div class="file-selection">
+      <input type="file" id="fileInput">
+      <button id="fileButton">Choose a file</button>
+    </div>
+
+    <!-- Upload button -->
+    <div class="upload-button">
+      <button id="uploadButton" disabled>Upload</button>
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
     <script src="renderer.js"></script>
   </body>
 </html>

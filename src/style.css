@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom right, #00000000, #161616bf);
+}
+
+.wave{
+    background-image: url(../images/wave.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#logo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* This will ensure that your logo maintains its aspect ratio */
+}
+
+#userhashInput {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #09000c; /* dark purple */
+    border-radius: 5px;
+    background-color: #000000; /* dark gray */
+    color: #fff; /* white */
+    font-size: 14px;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileButton, #uploadButton, #linkButton {
+    padding: 10px 20px;
+    background-color: #4C165C; /* dark purple */
+    color: #fff; /* white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+#fileButton:hover, #uploadButton:hover, #linkButton:hover {
+    background-color: #360033; /* darker purple */
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #4C165C;
+}
+
+#uploadButton:disabled {
+    background-color: #00000049; /* gray */
+    cursor: not-allowed;
+}
+
+#linkButton {
+    display: none; /* Initially hidden */
+}
