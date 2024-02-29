@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.cathy.nesu
+win:
+  icon: ./icons/icon.ico
+mac:
+  icon: ./icons/icon.icns
+files: []
+electronVersion: 29.1.0
