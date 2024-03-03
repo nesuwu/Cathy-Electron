@@ -56,7 +56,7 @@ body {
     transition: all 0.5s ease;
 }
 
-#fileButton:hover, #uploadButton:hover, #linkButton:hover {
+#fileButton:hover:not(:disabled), #uploadButton:hover:not(:disabled), #linkButton:hover:not(:disabled) {
     background-color: #360033; /* darker purple */
     transform: scale(1.1);
     box-shadow: 0 0 25px #4C165C;
@@ -68,5 +68,10 @@ body {
 }
 
 #linkButton {
+    width: 150px;
     display: none; /* Initially hidden */
+    text-align: center; /* To keep the text centered */
+    white-space: nowrap; /* To prevent the text from wrapping */
+    overflow: hidden; /* To hide any overflow */
+    text-overflow: ellipsis; /* To add an ellipsis (...) when the text overflows */
 }
