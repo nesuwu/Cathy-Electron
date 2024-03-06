@@ -1,77 +1,101 @@
 body {
-    height: 100vh;
-    margin: 0;
-    background-size: cover;
-    background-color: #000000;
-    background-image: linear-gradient(to bottom right, #00000000, #161616bf);
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-color: #000000;
+  background-image: linear-gradient(to bottom right, #00000000, #161616bf);
 }
 
-.wave{
-    background-image: url(../images/wave.svg);
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 100vh;
+.wave {
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 #logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 #logo {
-    width: 300px;
-    height: 300px;
-    object-fit: contain; /* This will ensure that your logo maintains its aspect ratio */
+  width: 300px;
+  height: 300px;
+  object-fit: contain; /* This will ensure that your logo maintains its aspect ratio */
 }
 
 #userhashInput {
-    width: 200px;
-    height: 30px;
-    padding: 5px;
-    margin: 20px auto;
-    display: block;
-    border: 1px solid #09000c; /* dark purple */
-    border-radius: 5px;
-    background-color: #000000; /* dark gray */
-    color: #fff; /* white */
-    font-size: 14px;
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #09000c; /* dark purple */
+  border-radius: 5px;
+  background-color: #000000; /* dark gray */
+  color: #fff; /* white */
+  font-size: 14px;
 }
 
 #fileInput {
-    display: none;
+  display: none;
 }
 
-#fileButton, #uploadButton, #linkButton {
-    padding: 10px 20px;
-    background-color: #4C165C; /* dark purple */
-    color: #fff; /* white */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px auto;
-    display: block;
-    transition: all 0.5s ease;
+#fileButton,
+#uploadButton,
+#linkButton {
+  padding: 10px 20px;
+  background-color: #4c165c; /* dark purple */
+  color: #fff; /* white */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  transition: all 0.5s ease;
 }
 
-#fileButton:hover:not(:disabled), #uploadButton:hover:not(:disabled), #linkButton:hover:not(:disabled) {
-    background-color: #360033; /* darker purple */
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #4C165C;
+#fileButton:hover:not(:disabled),
+#uploadButton:hover:not(:disabled),
+#linkButton:hover:not(:disabled) {
+  background-color: #360033; /* darker purple */
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #4c165c;
 }
 
 #uploadButton:disabled {
-    background-color: #00000049; /* gray */
-    cursor: not-allowed;
+  background-color: #00000049; /* gray */
+  cursor: not-allowed;
 }
 
 #linkButton {
-    width: 150px;
-    display: none; /* Initially hidden */
-    text-align: center; /* To keep the text centered */
-    white-space: nowrap; /* To prevent the text from wrapping */
-    overflow: hidden; /* To hide any overflow */
-    text-overflow: ellipsis; /* To add an ellipsis (...) when the text overflows */
+  width: 150px;
+  display: none; /* Initially hidden */
+  text-align: center; /* To keep the text centered */
+  white-space: nowrap; /* To prevent the text from wrapping */
+  overflow: hidden; /* To hide any overflow */
+  text-overflow: ellipsis; /* To add an ellipsis (...) when the text overflows */
+}
+
+progress {
+  width: 13%; /* Adjust as needed */
+  height: 20px;
+  margin: 10px auto; /* Vertical margin of 10px, horizontal auto for centering */
+  display: block; /* Block level element to allow for centering with margin */
+  background-color: #1111114d;
+  border: none;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #1111114d;
+  border-radius: 6px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #860d76;
+  border-radius: 6px;
 }
