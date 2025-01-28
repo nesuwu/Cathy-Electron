@@ -1,3 +1,5 @@
+# ****THIS REPOSITORY IS NO LONGER MAINTAINED DUE TO A NEW PROJECT THAT AIMS TO DO EVERYTHING THIS ONE CAN BUT BETTER!****
+
 # Cathy - File Upload Application
 
 Cathy is a desktop application built with Electron. It allows users to upload files to a server.
